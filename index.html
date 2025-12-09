@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmprestaMais - Plataforma de Empréstimos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: 'hsl(222.2 84% 4.9%)',
+              foreground: 'hsl(210 40% 98%)',
+              card: 'hsl(222.2 84% 4.9%)',
+              'card-foreground': 'hsl(210 40% 98%)',
+              primary: {
+                DEFAULT: 'hsl(263 70% 50.4%)',
+                foreground: 'hsl(210 40% 98%)',
+              },
+              secondary: {
+                DEFAULT: 'hsl(217 32.6% 17.5%)',
+                foreground: 'hsl(210 40% 98%)',
+              },
+              muted: {
+                DEFAULT: 'hsl(217.2 32.6% 17.5%)',
+                foreground: 'hsl(215 20.2% 65.1%)',
+              },
+              accent: {
+                DEFAULT: 'hsl(217.2 32.6% 17.5%)',
+                foreground: 'hsl(210 40% 98%)',
+              },
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --background: 222.2 84% 4.9%;
+        --foreground: 210 40% 98%;
+        --primary: 263 70% 50.4%;
+      }
+      
+      body { 
+        font-family: 'Inter', sans-serif; 
+        background-color: hsl(222.2 84% 4.9%); 
+        color: hsl(210 40% 98%);
+      }
+
+      /* Custom Utilities */
+      .glass-card {
+        background: rgba(30, 41, 59, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .glass-card-hover {
+        transition: all 0.3s ease;
+      }
+      .glass-card-hover:hover {
+        background: rgba(30, 41, 59, 0.6);
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .bg-gradient-primary {
+        background: linear-gradient(135deg, hsl(263 70% 50.4%), hsl(230 60% 55%));
+      }
+
+      .bg-gradient-gold {
+        background: linear-gradient(135deg, #FFD700, #FFA500);
+      }
+      
+      .text-gradient {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(135deg, hsl(263 70% 50.4%), hsl(230 60% 55%));
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: hsl(222.2 84% 4.9%); 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.87.1",
+    "zod": "https://aistudiocdn.com/zod@^3.22.4",
+    "react-hook-form": "https://aistudiocdn.com/react-hook-form@^7.49.3",
+    "@hookform/resolvers/zod": "https://aistudiocdn.com/@hookform/resolvers@^3.3.4/zod",
+    "@hookform/resolvers/": "https://aistudiocdn.com/@hookform/resolvers@^5.2.2/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
