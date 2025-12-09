@@ -6,7 +6,7 @@ import { supabaseService } from '../services/supabaseService';
 import { Indicacao } from '../types';
 import { useAuth } from '../App';
 import { Users, Copy, Send, Star } from 'lucide-react';
-import { getFriendlyErrorMessage } from '../utils/errorHandling';
+import { getFriendlyErrorMessage } from '../src/utils/errorHandling';
 
 export const Indicacoes: React.FC = () => {
   const { user } = useAuth();

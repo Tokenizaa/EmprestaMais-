@@ -1,6 +1,6 @@
 
 import { UserProfile, UserRole, LoanOffer, LoanContract, LoanStatus, Guarantee, LoanRequest, Documento, Recompensa, Indicacao, RecompensaResgatada, Challenge, Badge, Notification, Partner, SystemSettings } from '../types';
-import { AppError, withRetry } from '../utils/errorHandling';
+import { AppError, withRetry } from '../src/utils/errorHandling';
 import { calculateInstallment } from '../utils/financial';
 
 // Simulação de banco de dados em memória/localStorage

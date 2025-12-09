@@ -6,7 +6,7 @@ import { supabaseService } from '../services/supabaseService';
 import { Documento } from '../types';
 import { useAuth } from '../App';
 import { FileText, Upload, CheckCircle, Clock, XCircle, AlertCircle } from 'lucide-react';
-import { getFriendlyErrorMessage } from '../utils/errorHandling';
+import { getFriendlyErrorMessage } from '../src/utils/errorHandling';
 
 export const Documentos: React.FC = () => {
   const { user } = useAuth();
